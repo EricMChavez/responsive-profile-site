@@ -1,0 +1,111 @@
+#all{
+    height: 100vh;
+    overflow: hidden;
+    font-family: "hero-new", sans-serif;
+    font-weight: 400;
+}
+#header{
+    display: flex;
+    height: 69px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid lightgray 1px;
+    font-size: 16px;
+}
+    #logo{
+        margin-right: auto;
+        font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 18px
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #header a{
+        padding:18px;
+    }
+    #header a:nth-child(2){
+        font-weight: 700
+    }
+#content{
+    height: 100%;
+    display: flex;
+}
+    #face{
+        flex: 2;
+        border: solid black 1px;
+        background-image: url('face.jpg');
+        background-size: cover;
+
+    }
+    #sidebar{
+        flex: 1;
+        font-family: "proxima-nova", sans-serif;
+        line-height: 19px;
+    }
+        #words{
+            padding: 60px;
+        }
+            h1{
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 16px;
+                font-weight: 700
+            }
+            #link{
+                text-align: center;
+                padding: 15px 20px;
+                color: white;
+                margin: 22px 0;
+                background-color: #305B90;
+                border-radius: 5px
+            }
+            #link:hover{
+                transition: 100ms;
+                background-color:#456c9c
+            }
+            p{
+                line-height: 24px;
+                margin: 22px 0;
+            }
+            h3{
+                color: gray;
+                font-size: 12px;
+                letter-spacing: 3px;
+                margin: 5px 0;
+            }
+            h4{
+                font-size: 14px;
+            }
+            #thumbnails img{
+                width: 39px;
+                margin: 12px 12px 12px 0;
+            }
+#footer{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    padding-left: 27px;
+    background-color: rgba(255,255,255, .7);
+    box-shadow:20px 20px 10px 20px rgba(0,0,0, .3);
+}
+    #button{
+        padding: 12px 20px;
+        margin: 18px;
+        color: white;
+        background-color: #0773B4;
+        border-radius: 5px
+    }
+    #button:hover{
+        transition: 100ms;
+        background-color:#07639C;
+    }
