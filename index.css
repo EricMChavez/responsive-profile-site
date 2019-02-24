@@ -42,7 +42,7 @@
     #face{
         flex: 2;
         border: solid black 1px;
-        background-image: url('face1.jpg');
+        background-image: url('face_1.jpg');
         background-size: cover;
         background-position-x: center;
         background-position-y: 30%;
