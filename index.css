@@ -1,16 +1,19 @@
 #all{
-    height: 100vh;
     overflow: hidden;
     font-family: "hero-new", sans-serif;
     font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #header{
     display: flex;
-    height: 69px;
+    min-height: 49px;
     justify-content: flex-end;
     align-items: center;
     border-bottom: solid lightgray 1px;
     font-size: 16px;
+    flex: 1;
 }
     #logo{
         margin-right: auto;
@@ -26,24 +29,29 @@
     #header a{
         padding:18px;
     }
-    #header a:nth-child(2){
+    #hamburger{
+        display: none
+    }
+    #header a:nth-child(3){
         font-weight: 700
     }
 #content{
-    height: 100%;
     display: flex;
+    flex: 10;
 }
     #face{
         flex: 2;
         border: solid black 1px;
         background-image: url('face.jpg');
         background-size: cover;
+        background-position: center;
 
     }
     #sidebar{
         flex: 1;
         font-family: "proxima-nova", sans-serif;
         line-height: 19px;
+        min-width: 340px;
     }
         #words{
             padding: 60px;
@@ -94,10 +102,12 @@
     bottom: 0;
     width: 100vw;
     height: 60px;
-    padding-left: 27px;
     background-color: rgba(255,255,255, .7);
     box-shadow:20px 20px 10px 20px rgba(0,0,0, .3);
 }
+    #tagline{
+        padding: 20px;
+    }
     #button{
         padding: 12px 20px;
         margin: 18px;
@@ -109,3 +119,51 @@
         transition: 100ms;
         background-color:#07639C;
     }
+@media (max-width: 1200px) { /* tablet-L */
+    body{background-color: rgba(0,0,0, .3);
+    }  
+}
+@media (max-width: 800px) { /* tablet-P */
+    body{
+        background-color: white;
+        text-align: center;
+    } 
+    #content{
+        display: inline-block;
+    }
+    #face{
+        height: 50vh;
+        background-position: center; 
+    }
+    #words{
+        position: relative;
+        top: -150px;
+        
+    }
+    h1{
+        color: #ffffff;
+        text-shadow: 3px 3px 15px #000000;
+    }
+    h2{
+        color: #ffffff;
+        text-shadow: 3px 3px 15px #000000;
+    }
+    #tagline{
+        display: none
+    }
+    #footer{
+        justify-content: center
+    }
+}
+@media (max-width: 600px) { /* mobiel */
+    body{background-color: rgba(0,0,0, .3);}
+    .nav{
+        display: none;
+    }
+    #hamburger{
+        display: inline;
+        margin: 20px
+    }
+}
+
+
