@@ -120,8 +120,6 @@
         transition: 100ms;
         background-color:#07639C;
     }
-@media (max-width: 1200px) { /* tablet-L */
-}
 @media (max-width: 800px) { /* tablet-P */
     body{
         text-align: center;
