@@ -42,9 +42,10 @@
     #face{
         flex: 2;
         border: solid black 1px;
-        background-image: url('face.jpg');
+        background-image: url('face1.jpg');
         background-size: cover;
-        background-position: center;
+        background-position-x: center;
+        background-position-y: 30%;
 
     }
     #sidebar{
@@ -120,12 +121,12 @@
         background-color:#07639C;
     }
 @media (max-width: 1200px) { /* tablet-L */
-    body{background-color: rgba(0,0,0, .3);
-    }  
+    #face{
+
+    }
 }
 @media (max-width: 800px) { /* tablet-P */
     body{
-        background-color: white;
         text-align: center;
     } 
     #content{
@@ -134,6 +135,7 @@
     #face{
         height: 50vh;
         background-position: center; 
+        background-image: url('face.jpg');
     }
     #words{
         position: relative;
@@ -156,7 +158,6 @@
     }
 }
 @media (max-width: 600px) { /* mobiel */
-    body{background-color: rgba(0,0,0, .3);}
     .nav{
         display: none;
     }
